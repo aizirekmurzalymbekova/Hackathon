@@ -1,0 +1,170 @@
+@media all and (max-width: 1160px) {
+  .container-post {
+    max-width: 300px;
+  }
+}
+
+@media all and (max-width: 890px) {
+  .container-post {
+    max-width: 400px;
+  }
+  .container {
+    display: flex;
+    justify-content: space-around;
+  }
+  .side-bar {
+    margin-left: 10px;
+  }
+  .post-image {
+    width: 500px;
+  }
+}
+
+@media all and (max-width: 770px) {
+  .container-post {
+    max-width: 300px;
+  }
+  .side-bar {
+    margin-left: 10px;
+  }
+  .container {
+    margin: 30px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .tweet {
+    width: 500px;
+    margin: 20px auto;
+  }
+  .post-image {
+    width: 300px;
+  }
+
+  .post-share {
+    width: 400px;
+    margin-left: 100px;
+    margin-right: -110px;
+  }
+
+  .tweet-list button img {
+    width: 15px;
+    height: 15px;
+  }
+  .tweet-list img.avatar {
+    width: 20px;
+    height: 20px;
+  }
+  .tweet-post {
+    margin: 5px;
+  }
+  .side-bar {
+    width: 200px;
+  }
+  .side-bar img {
+    width: 10px;
+    object-fit: contain;
+    margin-right: 10px;
+  }
+
+  .side-bar div {
+    margin: 15px;
+  }
+  .side-bar a {
+    font-weight: 500;
+    font-size: 12px;
+  }
+
+  #side-bar__logo img {
+    width: 20px;
+    object-fit: contain;
+  }
+
+  .post-header h1 {
+    font-size: 14px;
+  }
+
+  .form-post button {
+    height: 25px;
+    font-size: 12px;
+    margin: 0px;
+    padding: 0px;
+  }
+
+  .form-post input {
+    margin: 0px;
+    font-size: 12px;
+  }
+
+  .pagination {
+    height: 30px;
+    width: 100px;
+  }
+  .pagination button {
+    width: 50px;
+    height: 30px;
+    font-size: 13px;
+  }
+  .tweet-list i {
+    font-size: 11px;
+  }
+  ::placeholder {
+    font-size: 12px;
+  }
+  /* .search-block {
+    margin-top: 18px;
+  } */
+  .pagination {
+    margin-top: -19px;
+  }
+}
+
+@media all and (max-width: 680px) {
+  .post-share {
+    margin: 10px;
+  }
+  .inp-search {
+    width: 150px;
+    height: 25px;
+  }
+
+  .tweeter-icon {
+    width: 35px;
+    height: 35px;
+  }
+  .tweet-list {
+    margin-left: 20px;
+  }
+}
+
+@media all and (max-width: 450px) {
+  .container {
+    margin: 10px;
+  }
+
+  .side-bar div {
+    margin: 10px;
+    font-size: 10px;
+  }
+}
+
+@media all and (max-width: 380px) {
+  .side-bar a {
+    font-size: 8px;
+  }
+  .post-header h1 {
+    font-size: 12px;
+  }
+
+  .form-post button {
+    height: 15px;
+    font-size: 12px;
+    margin: 0px;
+    padding: 0px;
+  }
+
+  .form-post input {
+    margin: 0px;
+    font-size: 10px;
+  }
+}
