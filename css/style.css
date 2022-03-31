@@ -8,14 +8,14 @@
   display: flex;
 }
 .avatar-main {
-  width: 300px;
-  height: 300px;
-  margin: 0 20px;
+  width: 200px;
+  height: 200px;
+  margin-right: 20px;
 }
 .post-share {
   max-width: 700px;
   width: 100%;
-  padding: 20px;
+  /* padding-left: 20px; */
 }
 
 .post-header {
@@ -131,6 +131,8 @@
 .container {
   display: flex;
   justify-content: space-evenly;
+  margin-right: 20px;
+  margin-top: 30px;
 }
 .container-post {
   padding: 10px 0px;
@@ -317,6 +319,7 @@
 .right-bar img {
   width: 35px;
   height: 35px;
+  border-radius: 50%;
 }
 
 .right-bar button {
@@ -324,6 +327,7 @@
   border-radius: 20px;
   width: 80px;
   font-size: 14px;
+  font-family: Open Sans, sans-serif;
 }
 
 .right-bar div {
