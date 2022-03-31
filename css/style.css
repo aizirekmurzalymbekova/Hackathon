@@ -1,3 +1,140 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+
+.container-post {
+  max-width: 600px;
+  width: 100%;
+  padding: 20px;
+}
+.post-header {
+  display: flex;
+}
+
+.post-head {
+  margin: 10px 0;
+  padding-bottom: 20px;
+  font-size: 24px;
+  font-weight: 700;
+  width: 80%;
+}
+.inp-post,
+.inp-image {
+  width: 100%;
+  margin: 10px 0;
+  border: none;
+  padding: 5px;
+}
+.inp-btn {
+  width: 100px;
+  margin-top: 20px;
+  border-radius: 25px;
+  padding: 10px;
+  background-color: #35b4e6;
+  border: none;
+  color: #fff;
+  font-weight: 700;
+}
+.form-post {
+  padding-top: 20px;
+}
+.post-img {
+  width: 30px;
+}
+.tweeter-icon {
+  width: 50px;
+  height: 50px;
+}
+.tweet {
+  width: 700px;
+  margin: 50px auto;
+}
+.post-image {
+  width: 700px;
+}
+.avatar {
+  width: 70px;
+  border-radius: 50px;
+}
+
+.tweet-list {
+  margin: 20px 0;
+}
+.tweet-post {
+  margin: 20px 0;
+}
+.btn-delete img,
+.btn-edit img,
+.btn-comments img,
+.btn-views img,
+.btn-likes img {
+  width: 30px;
+  height: auto;
+}
+.btn-delete,
+.btn-edit,
+.btn-comments,
+.btn-views,
+.btn-likes {
+  border: none;
+  background: transparent;
+  padding: 10px;
+}
+.tweet span {
+  padding: 5px;
+  color: grey;
+}
+.edit-inp-post,
+.edit-inp-image {
+  width: 100%;
+  margin-top: 20px;
+  border: none;
+}
+
+.side-bar img {
+  width: 20px;
+  object-fit: contain;
+  margin-right: 20px;
+}
+
+.side-bar a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+.side-bar div {
+  margin: 30px;
+}
+
+#side-bar__logo img {
+  width: 35px;
+  object-fit: contain;
+}
+
+.side-bar {
+  margin-left: -250px;
+  border-right: 1px solid gray;
+}
+
+.container {
+  display: flex;
+  justify-content: space-evenly;
+}
+.container-post {
+  padding: 10px 0px;
+}
+.search-block {
+  margin-top: 18px;
+}
+
+.pagination button {
+  margin-right: 10px;
+}
+
 @media all and (max-width: 1160px) {
   .container-post {
     max-width: 300px;
