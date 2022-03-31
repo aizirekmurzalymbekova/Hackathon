@@ -1,3 +1,20 @@
 {
-  "posts": []
+  "posts": [
+    {
+      "post": "hello",
+      "image": "",
+      "likes": 20,
+      "comments": 48,
+      "views": 84,
+      "id": 1
+    },
+    {
+      "post": "fdgdf",
+      "image": "",
+      "likes": 91,
+      "comments": 84,
+      "views": 33,
+      "id": 2
+    }
+  ]
 }
