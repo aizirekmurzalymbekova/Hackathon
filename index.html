@@ -64,6 +64,8 @@
 
       <!-- Post share -->
       <div class="post-share">
+        <div class="post-main">
+          <img class = "avatar-main" src="./images/twitteravatar.jpg" alt="">
         <div class="container-post">
           <div class="post-header">
             <h1 class="post-head">Share tweet</h1>
@@ -78,6 +80,21 @@
             <input type="text" placeholder="Enter image" class="inp-image" />
             <button type="submit" class="inp-btn">TWEET</button>
           </form>
+          <div class="search_pagination">
+            <div class="search-block">
+              <input
+                class="inp-search form-control"
+                placeholder="Search..."
+                type="search"
+              />
+            </div>
+            <div class="tweet-list row"></div>
+            <div class="pagination">
+              <button class="btn-primary prev-btn btn">prev</button>
+              <button class="btn-primary next-btn btn">next</button>
+            </div>
+          </div>
+        </div>
         </div>
         <!-- Aizirek -->
         <div class="search_pagination">
@@ -127,10 +144,7 @@
        </div>
       </div>
     </div>
-
-    
-
-    
+  </div>
         <!-- Post CRUD -->
         <div class="tweet"></div>
     
