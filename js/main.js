@@ -74,3 +74,95 @@ async function render() {
   });
 }
 render();
+
+// ! Delete
+
+$(document).on("click", ".btn-delete", async (event) => {
+  let id = event.currentTarget.id;
+  await fetch(`${API}/${id}`, {
+    method: "DELETE",
+  });
+  render();
+});
+
+// ! Update
+let editInpPost = $(".edit-inp-post");
+let editInpImage = $(".edit-inp-image");
+let editForm = $(".edit-form");
+let editModal = $(".modal");
+
+$(document).on("click", ".btn-edit", async (event) => {
+  let id = event.currentTarget.id;
+  editForm.attr("id", id);
+  const response = await fetch(`${API}/${id}`);
+  const data = await response.json();
+  editInpPost.val(data.post);
+  editInpImage.val(data.image);
+  editForm.on("submit", async (event) => {
+    event.preventDefault();
+    let post = editInpPost.val().trim();
+    let image = editInpImage.val().trim();
+    await fetch(`${API}/${id}`, {
+      method: "PATCH",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({ post: post, image: image }),
+    });
+    render();
+    editModal.modal("hide");
+  });
+});
+
+//! Pagination
+let prevBtn = $(".prev-btn");
+let nextBtn = $(".next-btn");
+
+let postsPerPage = 5;
+let currentPage = 1;
+let lastPage = 1;
+
+nextBtn.on("click", () => {
+  if (currentPage === lastPage) {
+    return;
+  }
+  currentPage++;
+  render();
+  window.scrollTo(0, 0);
+});
+
+prevBtn.on("click", () => {
+  if (currentPage === 1) {
+    return;
+  }
+  currentPage--;
+  render();
+  window.scrollTo(0, 0);
+});
+
+// ! Live search функционал
+let searchInp = $(".inp-search");
+
+searchInp.on("input", (event) => {
+  searchValue = event.target.value;
+  currentPage = 1;
+  render();
+});
+
+async function getLikes() {
+  $(document).on("click", ".btn-likes", async (event) => {
+    let id = event.currentTarget.id;
+    const response = await fetch(`${API}/${id}`);
+    const data = await response.json();
+    let sum = data.likes;
+    await fetch(`${API}/${id}`, {
+      method: "PATCH",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({ likes: sum + 1 }),
+    });
+    render();
+  });
+}
+getLikes();
