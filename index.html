@@ -20,7 +20,83 @@
     <title>Document</title>
   </head>
   <body>
-     
+    <div class="container">
+      <div class="side-bar">
+        <div id="side-bar__logo">
+          <img src="./images/twitterlogo.png" alt="Side-bar logo" />
+        </div>
+        <div id="side-bar__home">
+          <img src="./images/twitterhome.png" alt="Side-bar home" />
+          <a href="">Home</a>
+        </div>
+        <div id="side-bar__explore">
+          <img src="./images/twitterhashtag.png" alt="Side-bar explore" />
+          <a href="">Explore</a>
+        </div>
+        <div id="side-bar__notifications">
+          <img
+            src="./images/twitternotification.png"
+            alt="Side-bar notifications"
+          />
+          <a href="">Notifications</a>
+        </div>
+        <div id="side-bar__messages">
+          <img src="./images/twittermessages.png" alt="Side-bar messages" />
+          <a href="">Messages</a>
+        </div>
+        <div id="side-bar__bookmarks">
+          <img src="./images/twitterbookmark.png" alt="Side-bar bookmarks" />
+          <a href="">Bookmarks</a>
+        </div>
+        <div id="side-bar__lists">
+          <img src="./images/twitterlist.png" alt="Side-bar lists" />
+          <a href="">Lists</a>
+        </div>
+        <div id="side-bar__profile">
+          <img src="./images/twitteravatar.jpg" alt="Side-bar profile" />
+          <a href="">Profile</a>
+        </div>
+        <div id="side-bar__more">
+          <img src="./images/twittermore.png" alt="Side-bar more" />
+          <a href="">More</a>
+        </div>
+      </div>
+
+      <!-- Post share -->
+      <div class="post-share">
+        <div class="container-post">
+          <div class="post-header">
+            <h1 class="post-head">Share tweet</h1>
+            <img class="tweeter-icon" src="./icons/twitter.png" alt="" />
+          </div>
+          <form class="form-post">
+            <input
+              type="text"
+              placeholder="What's happening?"
+              class="inp-post"
+            />
+            <input type="text" placeholder="Enter image" class="inp-image" />
+            <button type="submit" class="inp-btn">TWEET</button>
+          </form>
+        </div>
+        <!-- Aizirek -->
+        <div class="search_pagination">
+          <div class="search-block">
+            <input
+              class="inp-search form-control"
+              placeholder="Search..."
+              type="search"
+            />
+          </div>
+          <div class="tweet-list row"></div>
+          <div class="pagination">
+            <button class="btn-primary prev-btn btn">prev</button>
+            <button class="btn-primary next-btn btn">next</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
     
         <!-- Post CRUD -->
         <div class="tweet"></div>
